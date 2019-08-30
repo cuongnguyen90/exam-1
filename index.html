@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (i = 0 ; i < 10;i++){
+        let random = Math.floor(Math.random()*20);
+        arr.push(random);
+    }
+
+    findMaxScore(arr);
+
+    function findMaxScore(arr) {
+        let max = arr[0];
+
+        for (j = 1; j < 10;j++){
+            if (max < arr[j]){
+                max = arr[j];
+            }
+        }
+
+        document.write(max);
+    }
+
+</script>
+</body>
+</html>
